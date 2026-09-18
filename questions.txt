@@ -1,0 +1,6 @@
+(1) Filter1 loops through columns first and rows second, while filter2 loops through rows first and columns second. 
+
+(2)Filter 1 ranged from 0.005880 to 0.011532 seconds with an average of 0.007391 seconds, while Filter 2 ranged from 0.003926 to 0.005375 seconds with an average of 0.004199 seconds. 
+Filter 2 was more consistent in the tests.
+
+(3) The Cachegrind results show that Filter 1 has many more L1 data cache misses than Filter 2. Filter 1 had 1,346,282 D1 misses with a 2.2% miss rate, while Filter 2 had 394,734 D1 misses with a 0.7% miss rate.
